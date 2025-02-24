@@ -1,4 +1,4 @@
-#👋 ¡Hola! Soy Fabio Parra#
+👋 ¡Hola! Soy Fabio Parra
 
 🎨 Diseñador UX/UI | 💻 Frontend Developer
 
@@ -23,3 +23,4 @@ After Effects | Lottie
 "El diseño es hacer visible lo invisible."
 
 💡 ¿Tienes un proyecto? Hablemos.
+
