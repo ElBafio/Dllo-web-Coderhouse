@@ -1,0 +1,126 @@
+
+/* Variables */
+$primary-color: #6cc9ff;
+$secondary-color: #1c1c1c;
+$text-color: #ffffff;
+$background-color: #121212;
+$font-family: 'Lexend', sans-serif;
+
+/* Mixins */
+@mixin button-style($bg-color, $text-color) {
+    background-color: $bg-color;
+    color: $text-color;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($bg-color, 10%);
+    }
+}
+
+/* Extend */
+%card-style {
+    background-color: $secondary-color;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos Generales */
+body {
+    font-family: $font-family;
+    font-weight: 200;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    color: $text-color;
+}
+
+/* Navbar */
+.navbar {
+    background-color: $secondary-color;
+    .navbar-brand {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: $text-color !important;
+    }
+    .navbar-nav {
+        .nav-link {
+            color: $text-color !important;
+            &:hover {
+                color: $primary-color !important;
+            }
+        }
+    }
+    .navbar-toggler {
+        @include button-style($primary-color, white);
+    }
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    text-align: left;
+    padding: 5rem 15rem;
+    color: white;
+    min-width: 400px;
+    max-width: 80%;
+    h1 {
+        font-size: 6rem;
+        line-height: 80%;
+    }
+    h6 {
+        color: $primary-color;
+    }
+    p {
+        font-size: 20px;
+    }
+}
+
+/* Botones */
+.button {
+    @include button-style(white, black);
+}
+
+/* Projects */
+.projects {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    .project {
+        @extend %card-style;
+        width: 300px;
+        text-align: center;
+    }
+}
+
+/* Cards */
+.card, .project-card, .card-experience {
+    @extend %card-style;
+}
+
+/* Contacto */
+.contact {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    .info {
+        border-radius: 8px;
+        width: 250px;
+        text-align: center;
+    }
+    h4 {
+        color: $primary-color;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: $secondary-color;
+    padding: 1rem;
+    text-align: center;
+}
