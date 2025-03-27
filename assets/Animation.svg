@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57.99 52.89">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: .7px;
+      }
+
+      .cls-2 {
+        stroke: #6cc9ff;
+      }
+    </style>
+  </defs>
+  <g id="Icons">
+    <line class="cls-2" x1="26.99" y1="2.36" x2="4.37" y2="2.36"/>
+    <line class="cls-2" x1="53.62" y1="2.36" x2="31" y2="2.36"/>
+    <path class="cls-1" d="M31.89,10.88h-5.8s-7.71,22.01-7.71,22.01c-.39,1.1-.41,2.29-.07,3.41l3.12,10.16h15.12s3.12-10.16,3.12-10.16c.34-1.11.32-2.31-.07-3.41l-7.71-22.01Z"/>
+    <rect class="cls-1" x="19.71" y="46.7" width="18.58" height="5.84"/>
+    <circle class="cls-1" cx="28.99" cy="31" r="2.94"/>
+    <line class="cls-1" x1="28.99" y1="10.88" x2="28.99" y2="28.06"/>
+    <path class="cls-2" d="M2.44,26.99C3.41,13.88,13.88,3.41,26.99,2.44"/>
+    <path class="cls-2" d="M31,2.44c13.11.98,23.57,11.44,24.55,24.55"/>
+    <rect class="cls-2" x="26.98" y=".35" width="4.02" height="4.02"/>
+    <rect class="cls-2" x=".35" y="26.98" width="4.02" height="4.02"/>
+    <rect class="cls-2" x="53.62" y="26.98" width="4.02" height="4.02"/>
+    <rect class="cls-2" x=".35" y=".35" width="4.02" height="4.02"/>
+    <rect class="cls-2" x="53.62" y=".35" width="4.02" height="4.02"/>
+  </g>
+</svg>

@@ -14,23 +14,27 @@
 /* Estilos Generales */
 body {
   font-family: "Lexend", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   margin: 0;
   padding: 0;
   background-color: #121212;
   color: #ffffff;
 }
 
+
 /* Navbar */
+
 .navbar {
-  background-color: #1c1c1c;
-  position: sticky;
+  background: rgba(32, 32, 32, 0.5) !important;
+  backdrop-filter: blur(10px);
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 1000;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(20, 20, 20, 0.7);
 }
+
 .navbar .navbar-brand {
   font-size: 1.5rem;
   font-weight: 700;
@@ -49,7 +53,7 @@ body {
   color: #6cc9ff;
 }
 .navbar .navbar-toggler {
-  background-color: #6cc9ff;
+  background-color: #1c1c1c;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -142,15 +146,17 @@ header {
   font-family: "Lexend", serif;
   font-weight: 300;
   letter-spacing: 0.35rem;
-  background-color: #1c1c1c;
   padding: 0;
-  position: sticky;
   top: 0;
   z-index: 1000;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
 }
 
 body {
   font-family: "Lexend", serif;
+  font-weight: 350;
   margin: 0;
   padding: 0;
   background-color: #121212;
@@ -196,6 +202,7 @@ body {
 .banner {
   position: relative;
   text-align: left;
+  margin-top: 5rem;
   padding: 5rem 15rem;
   color: #ffffff;
   min-width: 400px;
@@ -236,6 +243,12 @@ body {
 }
 
 .contenedor-pagina {
+  font-family: "Lexend", sans-serif;
+  font-weight: 180;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
   position: relative;
   z-index: 2;
   font-size: 20px;
@@ -249,18 +262,30 @@ body {
   height: auto;
 }
 
+
+.video-container {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  overflow: hidden; 
+}
+
 .video-background {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  object-fit: cover;
-  pointer-events: none;
+  height: 100%;
+  object-fit: cover; 
+  z-index: -1;
 }
+
 
 .section {
   padding: 2rem;
   text-align: center;
+  position: relative; 
+  z-index: 1; 
 }
 
 .projects {
@@ -385,14 +410,127 @@ i.bi {
 .project-card {
   background-color: #2d2d2d;
   border-radius: 12px;
-  width: 400px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-family: "Lexend", sans-serif;
   text-align: left;
   color: #ffffff;
   overflow: hidden;
   padding: 0;
+  perspective: 1000px; /* Efectico 3D */
+  width: 400px;
+  height: 300px;
 }
+
+
+.inner-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.project-card:hover .inner-container {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+
+.front {
+  background-color: #2d2d2d;
+  color: white;
+}
+
+.project-card .front {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  align-items: left;
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  text-align: left;
+}
+
+.project-card .front img {
+  width: 100%;
+  height: auto;
+}
+
+.project-card .card-text {
+  margin-top: 10px;
+}
+
+.project-card .back {
+  background-color: #b4def7;
+  color: black;
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.project-card .back a {
+  display: inline-block; 
+  color: rgb(24, 24, 24);
+  background: rgb(255, 255, 255);
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  
+}
+
+/* Hover boton*/
+.project-card .back a:hover {
+  background: #45b4f5;
+}
+
+
 
 .image-container {
   width: 100%;
@@ -420,6 +558,7 @@ i.bi {
 
 .project-details {
   padding: 25px;
+  text-align: left;
 }
 
 .project-details h3 {
@@ -434,7 +573,7 @@ i.bi {
 }
 
 .education-experience-container {
-  background-color: #212121;
+  background-color: #1c1c1c;
   color: #ffffff;
   display: flex;
   justify-content: center;
@@ -502,7 +641,7 @@ footer {
   background-color: #1c1c1c;
   padding: 1rem;
   text-align: center;
-  position: sticky;
+  position: relative;
   bottom: 0;
 }
 
@@ -553,7 +692,6 @@ footer p {
     align-items: center;
   }
   .banner {
-    text-align: center;
     padding: 2rem;
   }
   .banner h1 {
@@ -561,6 +699,10 @@ footer p {
   }
 }
 @media (max-width: 480px) {
+  .banner {
+    text-align: center;
+  }
+
   .banner h1 {
     font-size: 2rem;
   }
@@ -571,5 +713,12 @@ footer p {
     padding: 1rem;
   }
 }
+
+@media (max-width: 768px) { 
+  .video-background {
+    display: none;
+  }
+}
+
 
 /*# sourceMappingURL=styles.css.map */
