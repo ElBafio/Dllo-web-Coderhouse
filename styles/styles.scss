@@ -1,11 +1,11 @@
 /* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@200;700&display=swap");
 
 /* Variables */
 $primary-color: #6cc9ff;
 $secondary-color: #1c1c1c;
-$card-bg: #1c1c1c;            // para casi todas las cards
-$project-card-bg: #2d2d2d;     // para .project-card and .card-experience (segunda parte)
+$card-bg: #1c1c1c; // para casi todas las cards
+$project-card-bg: #2d2d2d; // para .project-card and .card-experience (segunda parte)
 $footer-bg: #1c1c1c;
 $background-color: #121212;
 $white: #ffffff;
@@ -26,7 +26,10 @@ $white: #ffffff;
 /* --- Primera parte --- */
 
 /* Extend */
-.card, .project-card, .card-experience, .projects .project {
+.card,
+.project-card,
+.card-experience,
+.projects .project {
   background-color: $card-bg; // #1c1c1c
   border-radius: 8px;
   padding: 1.5rem;
@@ -45,36 +48,35 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: $secondary-color;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  background-color: $secondary-color;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: $white;
+  }
+  .navbar-nav {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .navbar-brand {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: $white;
+    gap: 15px;
+    .nav-link {
+      color: $white;
+      text-decoration: none;
+      padding: 10px;
+      &:hover {
+        color: $primary-color;
+      }
     }
-    .navbar-nav {
-        display: flex;
-        gap: 15px;
-        .nav-link {
-            color: $white;
-            text-decoration: none;
-            padding: 10px;
-            &:hover {
-                color: $primary-color;
-            }
-        }
-    }
-    .navbar-toggler {
-        @include button-style($primary-color, white);
-    }
+  }
+  .navbar-toggler {
+    @include button-style($primary-color, white);
+  }
 }
-
 
 /* Banner */
 .banner {
@@ -147,20 +149,18 @@ footer {
 
 /*# sourceMappingURL=styles.css.map */
 
-
 /* ======= Segunda parte ======= */
 
 header {
-    font-family: "Lexend", serif;
-    font-weight: 300;
-    letter-spacing: .35rem;
-    background-color: #1c1c1c;
-    padding: 0;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  font-family: "Lexend", serif;
+  font-weight: 300;
+  letter-spacing: 0.35rem;
+  background-color: #1c1c1c;
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
-
 
 body {
   font-family: "Lexend", serif;
@@ -201,7 +201,7 @@ body {
   cursor: pointer;
 }
 .button a {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: $white;
 }
 
@@ -244,7 +244,7 @@ body {
   gap: 5rem;
   flex-wrap: wrap;
   margin-top: 2rem;
-  align-items: center; 
+  align-items: center;
 }
 
 .contenedor-pagina {
@@ -332,7 +332,7 @@ i.bi {
   font-size: 24px; // tamaño
   color: $primary-color; // color
 }
-  
+
 .card:hover i.bi {
   color: $white;
   transform: scale(1.1);
@@ -396,17 +396,17 @@ i.bi {
   font-family: "Lexend", sans-serif;
   text-align: left;
   color: $white;
-  overflow: hidden; 
-  padding: 0; 
+  overflow: hidden;
+  padding: 0;
 }
 
 .image-container {
   width: 100%;
-  height: 250px; 
+  height: 250px;
   overflow: hidden;
   position: relative;
-  padding: 0; 
-  margin: 0; 
+  padding: 0;
+  margin: 0;
 }
 
 .project-image {

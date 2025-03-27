@@ -4,7 +4,10 @@
 /* Mixins */
 /* --- Primera parte --- */
 /* Extend */
-.card, .project-card, .card-experience, .projects .project {
+.card,
+.project-card,
+.card-experience,
+.projects .project {
   background-color: #1c1c1c;
   border-radius: 8px;
   padding: 1.5rem;
@@ -20,7 +23,6 @@ body {
   background-color: #121212;
   color: #ffffff;
 }
-
 
 /* Navbar */
 
@@ -140,7 +142,6 @@ footer {
   text-align: center;
 }
 
-
 /* ======= Segunda parte ======= */
 header {
   font-family: "Lexend", serif;
@@ -195,7 +196,7 @@ body {
 }
 
 .button a {
-  background-color: #04AA6D;
+  background-color: #04aa6d;
   color: #ffffff;
 }
 
@@ -262,12 +263,11 @@ body {
   height: auto;
 }
 
-
 .video-container {
-  position: relative; 
+  position: relative;
   width: 100%;
   height: 100%;
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .video-background {
@@ -276,16 +276,15 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; 
+  object-fit: cover;
   z-index: -1;
 }
-
 
 .section {
   padding: 2rem;
   text-align: center;
-  position: relative; 
-  z-index: 1; 
+  position: relative;
+  z-index: 1;
 }
 
 .projects {
@@ -421,7 +420,6 @@ i.bi {
   height: 300px;
 }
 
-
 .inner-container {
   width: 100%;
   height: 100%;
@@ -434,7 +432,8 @@ i.bi {
   transform: rotateY(180deg);
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -447,7 +446,8 @@ i.bi {
   text-align: left;
 }
 
-.front, .back {
+.front,
+.back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -459,7 +459,6 @@ i.bi {
   align-items: left;
   text-align: left;
 }
-
 
 .front {
   background-color: #2d2d2d;
@@ -511,9 +510,8 @@ i.bi {
   text-align: center;
 }
 
-
 .project-card .back a {
-  display: inline-block; 
+  display: inline-block;
   color: rgb(24, 24, 24);
   background: rgb(255, 255, 255);
   padding: 10px 20px;
@@ -521,16 +519,15 @@ i.bi {
   border-radius: 5px;
   margin-top: 10px;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
 }
 
 /* Hover boton*/
 .project-card .back a:hover {
   background: #45b4f5;
 }
-
-
 
 .image-container {
   width: 100%;
@@ -714,11 +711,10 @@ footer p {
   }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
   .video-background {
     display: none;
   }
 }
-
 
 /*# sourceMappingURL=styles.css.map */
