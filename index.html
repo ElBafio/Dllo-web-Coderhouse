@@ -1,147 +1,282 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fabio Parra</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fabio Parra - Diseño UX/UI, Frontend, Ilustración y Animación</title>
+
+    <!-- Meta SEO -->
+    <meta
+      name="description"
+      content="Portafolio de Fabio Parra, diseñador de productos digitales con experiencia en UX/UI, desarrollo frontend, animación e ilustración."
+    />
+    <meta name="author" content="Fabio Parra" />
+    <meta
+      name="keywords"
+      content="Diseño UX, UI, Frontend, Ilustración, Animación, Portafolio, Fabio Parra, Experiencia de usuario, Diseño de interfaces, Medellín"
+    />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph para redes sociales -->
+    <meta
+      property="og:title"
+      content="Fabio Parra - UX/UI, Frontend, Ilustración y Animación"
+    />
+    <meta
+      property="og:description"
+      content="Explora el trabajo de Fabio Parra: diseño de productos centrados en el usuario con enfoque creativo y técnico."
+    />
+    <meta property="og:type" content="website" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
     <!--CSS-->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/styles.css" />
 
     <!--Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Lexend:wght@100..900&family=Paytone+One&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Peta&family=Lexend:wght@100..900&family=Paytone+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
-            <div class="container">
-               
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                  <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="pages/acerca.html">ACERCA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/trabajo.html">TRABAJO</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/experiencia.html">EXPERIENCIA</a></li>
-                    <li class="nav-item"><a class="nav-link" href="pages/contacto.html">CONTACTO</a></li>
-                </ul>
-                </div>
-            </div>
-        </nav>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="pages/acerca.html">ACERCA</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/trabajo.html">TRABAJO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/experiencia.html"
+                  >EXPERIENCIA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
+      <div class="video-container">
+        <video class="video-background" autoplay loop muted>
+          <source src="assets/wireframes.mp4" type="video/mp4" />
+        </video>
+        <div class="banner">
+          <h6>Diseño UX/UI - Ilustración - Desarrollo Frontend - Animación</h6>
+          <br />
+          <h1>Fabio Parra</h1>
+          <br />
+          <p>
+            Soy diseñador de productos (UX/UI) con 11 años de experiencia
+            trabajando en distintos sectores. Mi enfoque está en crear productos
+            innovadores y centrados en el usuario, con atención al detalle desde
+            la idea hasta la implementación.
+          </p>
+        </div>
+      </div>
 
-        <div class="video-container">
-            <video class="video-background" autoplay loop muted>
-              <source src="assets/wireframes.mp4" type="video/mp4">
-            </video>
-            <div class="banner">
-                <h6>Diseño UX/UI - Ilustración - Desarrollo Frontend - Animación</h6>
-                <br>
-                <h1>Fabio Parra</h1>
-                <br>
-                <p>Soy diseñador de productos (UX/UI) con 11 años de experiencia trabajando en distintos sectores. Mi enfoque está en crear productos innovadores y centrados en el usuario, con atención al detalle desde la idea hasta la implementación.</p>
+      <section id="work" class="section">
+        <div class="projects">
+          <div class="project">
+            <img
+              src="assets/Illustration.svg"
+              alt="Icono de diseño UX/UI"
+              width="100"
+              height="100"
+            />
+            <h3>Diseño UX/UI</h3>
+            <br />
+            <p>
+              Especialista en la creación de interfaces atractivas y
+              funcionales.
+            </p>
+          </div>
+          <div class="project">
+            <img
+              src="assets/Frontend.svg"
+              alt="Icono de desarrollo frontend con HTML, CSS y JavaScript"
+              width="100"
+              height="100"
+            />
+            <h3>Desarrollo Frontend</h3>
+            <br />
+            <p>Desarrollo de sitios web con HTML, CSS y JavaScript modernos.</p>
+          </div>
+          <div class="project">
+            <img
+              src="assets/Animation.svg"
+              alt="Icono de animación interactiva para productos digitales"
+              width="100"
+              height="100"
+            />
+            <h3>Animación</h3>
+            <br />
+            <p>
+              Creación de animaciones interactivas para mejorar la experiencia
+              del usuario.
+            </p>
+          </div>
+          <div class="project">
+            <img
+              src="assets/Illustration.svg"
+              alt="Icono de ilustración digital"
+              width="100"
+              height="100"
+            />
+            <h3>Ilustración</h3>
+            <br />
+            <p>Ilustraciones digitales para complementar proyectos visuales.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio" class="section">
+        <h2>Trabajo destacado</h2>
+        <div class="work">
+          <div class="project-card">
+            <div class="inner-container">
+              <div class="front">
+                <div class="image-container">
+                  <img
+                    src="../assets/ebay.png"
+                    alt="Captura del rediseño UX/UI del sitio web de Ebay"
+                    class="project-image"
+                  />
+                </div>
+                <div class="project-details">
+                  <h3>Ebay UX/UI Rediseño web</h3>
+                  <p>Figma / PS / AI</p>
+                </div>
+              </div>
+              <div class="back">
+                <p>
+                  Rediseño UX/UI de Ebay para mejorar la experiencia del
+                  usuario, optimizando la navegación y simplificando procesos de
+                  compra y venta. Se implementaron elementos visuales modernos
+                  para reforzar la identidad de la marca.
+                </p>
+                <a
+                  href="https://www.behance.net/gallery/169372031/Ebay-UXUI-Rediseno-web-Website-redesign"
+                  target="_blank"
+                  >Ver en Behance</a
+                >
+              </div>
             </div>
           </div>
 
-        
-        
-        
-        <section id="work" class="section">
-            <div class="projects">
-                <div class="project">
-                    <img src="assets/Illustration.svg" alt="Icon" width="100" height="100">
-                    <h3>Diseño UX/UI</h3>
-                    <br>
-                    <p>Especialista en la creación de interfaces atractivas y funcionales.</p>
+          <div class="project-card">
+            <div class="inner-container">
+              <div class="front">
+                <div class="image-container">
+                  <img
+                    src="../assets/ezpeak.png"
+                    alt="Diseño de app para ezpeak, experiencia financiera digital"
+                    class="project-image"
+                  />
                 </div>
-                <div class="project">
-                    <img src="assets/Frontend.svg" alt="Icon" width="100" height="100">
-                    <h3>Desarrollo Frontend</h3>
-                    <br>
-                    <p>Desarrollo de sitios web con HTML, CSS y JavaScript modernos.</p>
+                <div class="project-details">
+                  <h3>ezpeak UX/UI diseño App</h3>
+                  <p>Figma / PS / AI / AE</p>
                 </div>
-                <div class="project">
-                    <img src="assets/Animation.svg" alt="Icon" width="100" height="100">
-                    <h3>Animación</h3>
-                    <br>
-                    <p>Creación de animaciones interactivas para mejorar la experiencia del usuario.</p>
-                </div>
-                <div class="project">
-                    <img src="assets/Illustration.svg" alt="Icon" width="100" height="100">
-                    <h3>Ilustración</h3>
-                    <br> 
-                    <p>Ilustraciones digitales para complementar proyectos visuales.</p>
-                </div>
+              </div>
+              <div class="back">
+                <p>
+                  Rediseño UX/UI de ezpeak, mejorando la experiencia del usuario
+                  en transacciones financieras con una interfaz moderna e
+                  intuitiva.
+                </p>
+                <a
+                  href="https://www.behance.net/gallery/155938691/ezpeak-UXUI"
+                  target="_blank"
+                  >Ver en Behance</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
 
-        <section id="portfolio" class="section">
-            <h2>Trabajo destacado</h2>
-            <div class="work">
-                <div class="project-card">
-                    <div class="image-container">
-                        <img src="assets/ebay.png" alt="Project Screenshot" class="project-image">
-                    </div>
-                    <div class="project-details">
-                        <h3>Ebay UX/UI Rediseño web</h3>
-                        <p>Rediseño UX/UI para la plataforma web de ebay.</p>
-                    </div>
+          <div class="project-card">
+            <div class="inner-container">
+              <div class="front">
+                <div class="image-container">
+                  <img
+                    src="../assets/tinder.png"
+                    alt="Caso de estudio y rediseño UX/UI de la app Tinder"
+                    class="project-image"
+                  />
                 </div>
-                <div class="project-card">
-                    <div class="image-container">
-                        <img src="assets/ezpeak.png" alt="Project Screenshot" class="project-image">
-                    </div>
-                    <div class="project-details">
-                        <h3>ezpeak UX/UI diseño App</h3>
-                        <p>Desarrollo de una App de Android interactiva.</p>
-                    </div>
+                <div class="project-details">
+                  <h3>Tinder app UX Research / UX/UI redesign</h3>
+                  <p>Figma / Photoshop</p>
                 </div>
-                <div class="project-card">
-                    <div class="image-container">
-                        <img src="assets/rico.png" alt="Project Screenshot" class="project-image">
-                    </div>
-                    <div class="project-details">
-                        <h3>Rico UX/UI diseño Food App</h3>
-                        <p>Creación de una app híbrida de restaurantes.</p>
-                    </div>
-                </div>
+              </div>
+              <div class="back">
+                <p>
+                  Este proyecto incluyó una investigación exhaustiva de UX para
+                  la aplicación Tinder, seguida de un rediseño completo de
+                  UX/UI. El objetivo fue optimizar la experiencia del usuario,
+                  mejorando la navegación y la interacción dentro de la
+                  aplicación.
+                </p>
+                <a
+                  href="https://www.behance.net/gallery/183964275/Tinder-case-study-UX-Research"
+                  target="_blank"
+                  >Ver en Behance</a
+                >
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact" class="section">
-            <h2>Contacto</h2>
-            <div class="contact">
-                <div class="info">
-                    <h4>Ubicación:</h4>
-                    <p>Medellín, Colombia</p>
-                </div>
-                <div class="info">
-                    <h4>Teléfono:</h4>
-                    <p>+57-301-333-7734</p>
-                </div>
-                <div class="info">
-                    <h4>Correo:</h45>
-                    <p>fabio.parra1105@gmail.com</p>
-                </div>
-            </div>
-        </section>
-                <!-- Bootstrap JS -->
-                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+      <section id="contact" class="section">
+        <h2>Contacto</h2>
+        <div class="contact">
+          <div class="info">
+            <h4>Ubicación:</h4>
+            <p>Medellín, Colombia</p>
+          </div>
+          <div class="info">
+            <h4>Teléfono:</h4>
+            <p>+57-301-333-7734</p>
+          </div>
+          <div class="info">
+            <h4>Correo:</h4>
+            <p>fabio.parra1105@gmail.com</p>
+          </div>
+        </div>
+      </section>
+      <!-- Bootstrap JS -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </main>
 
     <footer>
-        <p>© 2025 - Todos los derechos reservados</p>
+      <p>© 2025 - Todos los derechos reservados</p>
     </footer>
-</body>
+  </body>
 </html>
-
-

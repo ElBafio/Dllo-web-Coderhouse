@@ -467,7 +467,7 @@ i.bi {
 
 .project-card .front {
   display: flex;
-  flex-direction: column; /* Stack elements vertically */
+  flex-direction: column;
   align-items: left;
   text-align: left;
   position: absolute;
@@ -718,3 +718,106 @@ footer p {
 }
 
 /*# sourceMappingURL=styles.css.map */
+
+/* Ajuste en el contenedor general de la sección para que ambos bloques queden juntos */
+.banner-paginas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem; /* Espacio reducido entre formulario e imagen */
+  flex-wrap: nowrap;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Contenedor para el formulario */
+.form-container {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 0 15px;
+  text-align: left; /* Alinea títulos y contenido a la izquierda */
+}
+
+/* Contenedor de la imagen */
+.contenedor-pagina {
+  flex: 1 1 50%;
+  max-width: 50%;
+  padding: 0 15px;
+}
+
+/* Forzamos que la imagen en contenedor-pagina ocupe el 100% del ancho del contenedor */
+.contenedor-pagina img {
+  width: 100%;
+  height: auto;
+}
+
+/* Estilos del formulario en dark mode */
+#contactForm {
+  background-color: #1c1c1c;
+  padding: 25px;
+  border-radius: 8px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Alinear los títulos (labels) a la izquierda */
+#contactForm h2,
+#contactForm .form-label {
+  text-align: left;
+}
+
+/* Campos de entrada */
+#contactForm .form-control {
+  background-color: #2d2d2d;
+  color: #dddddd;
+  border: 1px solid #444;
+  font-weight: 400;
+  width: 100%;
+}
+
+/* Placeholders */
+#contactForm .form-control::placeholder {
+  color: #999999;
+}
+
+/* Focus en campos */
+#contactForm .form-control:focus {
+  background-color: #2d2d2d;
+  color: #dddddd;
+  border-color: #6cc9ff;
+  box-shadow: none;
+}
+
+/* Botón */
+#contactForm .btn-primary {
+  background-color: #6cc9ff;
+  border-color: #6cc9ff;
+  color: #1c1c1c;
+  font-weight: 500;
+  width: 100%;
+  padding: 10px;
+}
+
+#contactForm .btn-primary:hover {
+  background-color: #5bb8e6;
+  border-color: #5bb8e6;
+}
+
+/* Media Query para responsividad: en pantallas pequeñas, los bloques se apilan */
+@media (max-width: 768px) {
+  .banner-paginas {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .form-container,
+  .contenedor-pagina {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  /* Opcional: reducir padding del formulario en móvil */
+  #contactForm {
+    padding: 15px;
+  }
+}
